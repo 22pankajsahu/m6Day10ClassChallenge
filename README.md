@@ -1,5 +1,3 @@
-Certainly! Here's a README.md file explaining the code and its functionality:
-
 # Shape and Color Change Demo
 
 This HTML and JavaScript code demonstrates how to change the background color and shape of a circle using buttons. The code uses basic HTML and CSS for the layout and appearance, and JavaScript for handling the color and shape changes.
