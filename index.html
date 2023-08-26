@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape and Color Change</title>
+    <meta name="author" content="Pankaj Sahu">
+    <meta name="keywords" content="shape-change, color-change, circle, square">
+    <meta name="description"
+        content="It demonstrate js properties which helps to change the background color of given circle and square. ">
+
+    <style>
+        .container {
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            display: flex;
+        }
+
+        .shape {
+
+            position: relative;
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            z-index: 100;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .triangle {
+            background-color: transparent;
+            position: relative;
+            left: 38px;
+            top: 40px;
+            width: 0;
+            height: 0;
+            border-bottom: 75px solid blue;
+            border-right: 75px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="circle">
+            <div class="shape"></div>
+        </div>
+        <button id="color">change color</button>
+        <button id="changeShape">change shape</button>
+    </div>
+
+    <script>
+
+        var Color = [   "red", "green", "cyan",  "black",  "voilet", "blue",  "yellow", "purple",    "orange",   "lightgreen",  "lemon",    ];
+        var index = 0;
+        const circle = document.getElementById("circle");
+        const shape = document.querySelector(".shape");
+        const Changecolor = document.querySelector("#color");
+        const changeShape = document.querySelector("#changeShape");
+        Changecolor.addEventListener("click", () => {
+            
+            if (index === Color.length) {
+                index = 0;
+            }
+            
+            circle.style.backgroundColor = Color[index];
+            index++;
+        })
+
+        var Tringle = false;
+        changeShape.addEventListener("click", () => {
+            if (!Tringle) {
+                var Shape = document.querySelector(".shape");
+                Shape.className = "triangle";
+                Tringle = true;
+            }
+            else {
+                var shape = document.querySelector(".triangle");
+                shape.className = "shape";
+                Tringle = false;
+            }
+        })
+    </script>
+    
+</body>
+
+</html>
