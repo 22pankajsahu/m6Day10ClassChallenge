@@ -11,6 +11,14 @@ This HTML and JavaScript code demonstrates how to change the background color an
 
 You can see a live demo of the project [here](https://22pankajsahu.github.io/m6Day10ClassChallenge/).
 
+## Screenshots
+
+Include relevant screenshots of the application here.
+
+![image](https://github.com/22pankajsahu/m6Day10ClassChallenge/assets/135128502/a1cf7f06-f320-4779-b82f-984b09405dc0)
+
+![image](https://github.com/22pankajsahu/m6Day10ClassChallenge/assets/135128502/3985ed5f-a64a-4db3-b84f-97a0a51da759)
+
 ## How It Works
 
 ### HTML Structure
